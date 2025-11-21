@@ -1,0 +1,74 @@
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+.hidden{display:none;}
+
+#loginBox {
+  width: 300px;
+  margin: 15% auto;
+  background: rgba(0,0,0,0.7);
+  padding: 30px;
+  border-radius: 20px;
+  text-align:center;
+}
+
+h1 {
+  text-align:center;
+  color: pink;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border:none;
+  border-radius:10px;
+  background: cyan;
+  margin-top: 10px;
+  cursor:pointer;
+}
+
+#portal {
+  text-align:center;
+  padding:20px;
+}
+
+#stageBox {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.sparkle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: pink;
+  border-radius: 50%;
+  pointer-events:none;
+  animation: fade 0.5s linear;
+}
+
+@keyframes fade{
+  to {transform:scale(3); opacity:0;}
+}
+
+#scratchLayer {
+  position: fixed;
+  inset: 0;
+  background: silver;
+  z-index:99;
+  display:none;
+}
+
+#braceletReveal {
+  width: 200px;
+  display:none;
+  margin: 20px auto;
+}
